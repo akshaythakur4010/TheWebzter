@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheWebzter</title>
+
+    <!-- Style Sheets -->
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/m_styles.css">
+    <link rel="stylesheet" href="./css/dhirajstyle.css">
+    <link rel="stylesheet" href="./css/dhirajresponsive.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="header_right">
+                        <div class="header_right_l">
+                            <button class="btn btn_header">
+                                Store
+                            </button>
+                            <button class="btn btn_header">
+                                Expert Advise
+                            </button>
+                            <button class="btn btn_header">
+                                About us
+                            </button>
+                            <button class="btn btn_header">
+                                Contact us
+                            </button>
+                        </div>
+                        <div class="header_right_r">
+                            <div class="header_div"></div>
+                            <div class="currency_drop_div">
+                                <button class="btn btn_header"
+                                    onclick="currency_drop('currency_drop', 'currency_drop_logo')">
+                                    USD
+                                    <img src="./img/currency_drop_ico.svg" alt="" class="img-fluid"
+                                        id="currency_drop_logo">
+                                </button>
+                                <div class="currency_drop d-none" id="currency_drop">
+                                    <button class="btn btn_header">EUR</button>
+                                    <button class="btn btn_header active">GBP</button>
+                                    <button class="btn btn_header">GBP</button>
+                                    <button class="btn btn_header">GBP</button>
+                                </div>
+                            </div>
+                            <button class="btn btn_header">
+                                Cart (10)
+                            </button>
+                            <button class="btn header_button">
+                                Login/Register
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path
+                                        d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5M16 7.5C16 9.70914 14.2091 11.5 12 11.5C9.79086 11.5 8 9.70914 8 7.5C8 5.29086 9.79086 3.5 12 3.5C14.2091 3.5 16 5.29086 16 7.5Z"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <!-- <button class="btn p-0"> -->
+                        <img src="./img/header_mobo.svg" alt="" class="img-fluid">
+                        <!-- </button> -->
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart_menu_close" style="display: none;">
+                            <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header">
+                    Shop
+                </button>
+                <div class="mob_line_header"></div>
+                <button class="btn btn_header">
+                    Expert Advise
+                </button>
+                <div class="mob_line_header"></div>
+                <button class="btn btn_header">
+                    About us
+                </button>
+                <div class="mob_line_header"></div>
+                <button class="btn btn_header">
+                    Contact us
+                </button>
+                <div class="mob_line_header"></div>
+                <div class="currency_drop_div">
+                    <button class="btn btn_header mx-auto"
+                        onclick="currency_drop('currency_drop2', 'currency_drop_logo2')">
+                        USD
+                        <img src="./img/currency_drop_ico.svg" alt="" class="img-fluid" id="currency_drop_logo2">
+                    </button>
+                    <div class="currency_drop d-none" id="currency_drop2">
+                        <button class="btn btn_header">EUR</button>
+                        <button class="btn btn_header">GBP</button>
+                    </div>
+                </div>
+                <div class="mob_line_header"></div>
+                <button class="btn btn_header">
+                    Cart (10)
+                </button>
+                <div class="mob_line_header"></div>
+                <button class="btn header_button">
+                    Login/Register
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path
+                            d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5M16 7.5C16 9.70914 14.2091 11.5 12 11.5C9.79086 11.5 8 9.70914 8 7.5C8 5.29086 9.79086 3.5 12 3.5C14.2091 3.5 16 5.29086 16 7.5Z"
+                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <div class="main_cart_drop">
+                <p class="xyz">Cart Summary</p>
+                <div class="cart_drop_top">
+                    <div class="cart_product_row">
+                        <div class="cart_product_row_left">
+                            <img src="./img/cart_prod_drop_img.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart_product_row_right">
+                            <div class="gruped">
+                                <div class="gruped_left">
+                                    <p class="product_title">
+                                        Valorant <br>
+                                        100 Gold <br>
+                                        In-Game Name:<br>John Smith 123 <br>
+                                        Account Origin Country:<br> United Kingdom
+                                    </p>
+                                    <div class="blabla">
+                                        <div class="blablabla">
+                                            <h4 class="prod_quantity">QTY : 1</h4>
+                                            <p class="prod_price">£50.00</p>
+                                        </div>
+                                        <button class="btn btn_rm">
+                                            Remove
+                                            <img src="./img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_product_row">
+                        <div class="cart_product_row_left">
+                            <img src="./img/cart_prod_drop_img.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart_product_row_right">
+                            <div class="gruped">
+                                <div class="gruped_left">
+                                    <p class="product_title">
+                                        Valorant <br>
+                                        100 Gold <br>
+                                        In-Game Name:<br>John Smith 123 <br>
+                                        Account Origin Country:<br> United Kingdom
+                                    </p>
+                                    <div class="blabla">
+                                        <div class="blablabla">
+                                            <h4 class="prod_quantity">QTY : 1</h4>
+                                            <p class="prod_price">£50.00</p>
+                                        </div>
+                                        <button class="btn btn_rm">
+                                            Remove
+                                            <img src="./img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_drop_bottom">
+                    <div class="cart_drop_bottom_top">
+                        <p class="cart_tot">TOTAL</p>
+                        <p class="cart_tot">£62.71</p>
+                    </div>
+                    <button class="btn cart_che_btn">Secure checkout</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="chec_out">
+        <div class="your_cart">
+            <div class="container px-0 ">
+                <div class="title_box">
+                    <h4 class="c_title">Your Shopping Cart</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0 ">
+            <div class="forms_box">
+                <!-- FOR DESKTOP -->
+                <div class="table_box d-none  d-lg-block d-md-block">
+                    <table class="table table-borderless m-0 table-striped table_custom">
+                        <thead>
+                            <tr class="dark_box">
+                                <th scope="col" class="db_comtent">Product Name</th>
+                                <th scope="col" class="db_comtent">Type</th>
+                                <th scope="col" class="db_comtent">QTY</th>
+                                <th scope="col" class="db_comtent">Billing Type</th>
+                                <th scope="col" class="db_comtent">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd_row">
+                                <td scope="row" class="odd_comtent">Nulla vitae elit libero, a pharetra augue.</td>
+                                <td class="odd_comtent">Video</td>
+                                <td class="odd_comtent">2</td>
+                                <td class="odd_comtent">
+                                    <div class="button_box">
+                                        One Off
+                                        <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn edit_btn">
+                                            Edit
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M12 20.5002H21M16.5 4.00023C16.8978 3.6024 17.4374 3.37891 18 3.37891C18.2786 3.37891 18.5544 3.43378 18.8118 3.54038C19.0692 3.64699 19.303 3.80324 19.5 4.00023C19.697 4.19721 19.8532 4.43106 19.9598 4.68843C20.0665 4.9458 20.1213 5.22165 20.1213 5.50023C20.1213 5.7788 20.0665 6.05465 19.9598 6.31202C19.8532 6.56939 19.697 6.80324 19.5 7.00023L7 19.5002L3 20.5002L4 16.5002L16.5 4.00023Z"
+                                                    stroke="#005BB9" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="odd_comtent" style="padding-right: 24px !important;">
+                                    <div class="button_box">
+                                        £100.00 <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn rmv_btn">
+                                            Remove
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M3 6.5H5M5 6.5H21M5 6.5V20.5C5 21.0304 5.21071 21.5391 5.58579 21.9142C5.96086 22.2893 6.46957 22.5 7 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V6.5H5ZM8 6.5V4.5C8 3.96957 8.21071 3.46086 8.58579 3.08579C8.96086 2.71071 9.46957 2.5 10 2.5H14C14.5304 2.5 15.0391 2.71071 15.4142 3.08579C15.7893 3.46086 16 3.96957 16 4.5V6.5M10 11.5V17.5M14 11.5V17.5"
+                                                    stroke="#C81414" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd_row">
+                                <td scope="row" class="even_comtent">Nulla vitae elit libero, a pharetra augue.</td>
+                                <td class="even_comtent">Video</td>
+                                <td class="even_comtent">2</td>
+                                <td class="even_comtent">
+                                    <div class="button_box">
+                                        One Off
+                                        <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn edit_btn">
+                                            Edit
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M12 20.5002H21M16.5 4.00023C16.8978 3.6024 17.4374 3.37891 18 3.37891C18.2786 3.37891 18.5544 3.43378 18.8118 3.54038C19.0692 3.64699 19.303 3.80324 19.5 4.00023C19.697 4.19721 19.8532 4.43106 19.9598 4.68843C20.0665 4.9458 20.1213 5.22165 20.1213 5.50023C20.1213 5.7788 20.0665 6.05465 19.9598 6.31202C19.8532 6.56939 19.697 6.80324 19.5 7.00023L7 19.5002L3 20.5002L4 16.5002L16.5 4.00023Z"
+                                                    stroke="#005BB9" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="even_comtent" style="padding-right: 24px !important;">
+                                    <div class="button_box">
+                                        £100.00 <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn rmv_btn">
+                                            Remove
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M3 6.5H5M5 6.5H21M5 6.5V20.5C5 21.0304 5.21071 21.5391 5.58579 21.9142C5.96086 22.2893 6.46957 22.5 7 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V6.5H5ZM8 6.5V4.5C8 3.96957 8.21071 3.46086 8.58579 3.08579C8.96086 2.71071 9.46957 2.5 10 2.5H14C14.5304 2.5 15.0391 2.71071 15.4142 3.08579C15.7893 3.46086 16 3.96957 16 4.5V6.5M10 11.5V17.5M14 11.5V17.5"
+                                                    stroke="#C81414" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd_row">
+                                <td scope="row" class="odd_comtent">Nulla vitae elit libero, a pharetra augue.</td>
+                                <td class="odd_comtent">Video</td>
+                                <td class="odd_comtent">2</td>
+                                <td class="odd_comtent">
+                                    <div class="button_box">
+                                        One Off
+                                        <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn edit_btn">
+                                            Edit
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M12 20.5002H21M16.5 4.00023C16.8978 3.6024 17.4374 3.37891 18 3.37891C18.2786 3.37891 18.5544 3.43378 18.8118 3.54038C19.0692 3.64699 19.303 3.80324 19.5 4.00023C19.697 4.19721 19.8532 4.43106 19.9598 4.68843C20.0665 4.9458 20.1213 5.22165 20.1213 5.50023C20.1213 5.7788 20.0665 6.05465 19.9598 6.31202C19.8532 6.56939 19.697 6.80324 19.5 7.00023L7 19.5002L3 20.5002L4 16.5002L16.5 4.00023Z"
+                                                    stroke="#005BB9" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="odd_comtent" style="padding-right: 24px !important;">
+                                    <div class="button_box">
+                                        £100.00 <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn rmv_btn">
+                                            Remove
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M3 6.5H5M5 6.5H21M5 6.5V20.5C5 21.0304 5.21071 21.5391 5.58579 21.9142C5.96086 22.2893 6.46957 22.5 7 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V6.5H5ZM8 6.5V4.5C8 3.96957 8.21071 3.46086 8.58579 3.08579C8.96086 2.71071 9.46957 2.5 10 2.5H14C14.5304 2.5 15.0391 2.71071 15.4142 3.08579C15.7893 3.46086 16 3.96957 16 4.5V6.5M10 11.5V17.5M14 11.5V17.5"
+                                                    stroke="#C81414" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd_row">
+                                <td scope="row" class="even_comtent">Nulla vitae elit libero, a pharetra augue.</td>
+                                <td class="even_comtent">Video</td>
+                                <td class="even_comtent">2</td>
+                                <td class="even_comtent">
+                                    <div class="button_box">
+                                        One Off <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn edit_btn">
+                                            Edit
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M12 20.5002H21M16.5 4.00023C16.8978 3.6024 17.4374 3.37891 18 3.37891C18.2786 3.37891 18.5544 3.43378 18.8118 3.54038C19.0692 3.64699 19.303 3.80324 19.5 4.00023C19.697 4.19721 19.8532 4.43106 19.9598 4.68843C20.0665 4.9458 20.1213 5.22165 20.1213 5.50023C20.1213 5.7788 20.0665 6.05465 19.9598 6.31202C19.8532 6.56939 19.697 6.80324 19.5 7.00023L7 19.5002L3 20.5002L4 16.5002L16.5 4.00023Z"
+                                                    stroke="#005BB9" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="even_comtent" style="padding-right: 24px !important;">
+                                    <div class="button_box">
+                                        £100.00 <!-- <h4 class="bluuee"></h4> -->
+                                        <button class="btn rmv_btn">
+                                            Remove
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <path
+                                                    d="M3 6.5H5M5 6.5H21M5 6.5V20.5C5 21.0304 5.21071 21.5391 5.58579 21.9142C5.96086 22.2893 6.46957 22.5 7 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V6.5H5ZM8 6.5V4.5C8 3.96957 8.21071 3.46086 8.58579 3.08579C8.96086 2.71071 9.46957 2.5 10 2.5H14C14.5304 2.5 15.0391 2.71071 15.4142 3.08579C15.7893 3.46086 16 3.96957 16 4.5V6.5M10 11.5V17.5M14 11.5V17.5"
+                                                    stroke="#C81414" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- FOR MOBILE -->
+                <div class="table_box d-block  d-lg-none d-md-none">
+                    <div class="product_box">
+                        <h4 class="bold_head">Product Name</h4>
+                        <p class="deammm">Nulla vitae elit libero, a pharetra augue.</p>
+                        <div class="three_box">
+                            <div class="type">
+                                <h4 class="bold_head">Type</h4>
+                                <p class="deammm">Video</p>
+                            </div>
+                            <div class="qty">
+                                <h4 class="bold_head">QTY</h4>
+                                <p class="deammm">2</p>
+                            </div>
+                            <div class="billing_type">
+                                <h4 class="bold_head">Billing type</h4>
+                                <p class="deammm">One off</p>
+                            </div>
+                        </div>
+                        <div class="sub_box">
+                            <h4 class="sub_name">Total</h4>
+                            <h4 class="sub_name">£379.00</h4>
+                        </div>
+                        <div class="butonr_box">
+                            <button class="btn edit_btn">
+                                Edit
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                    viewBox="0 0 24 25" fill="none">
+                                    <path
+                                        d="M12 20.5002H21M16.5 4.00023C16.8978 3.6024 17.4374 3.37891 18 3.37891C18.2786 3.37891 18.5544 3.43378 18.8118 3.54038C19.0692 3.64699 19.303 3.80324 19.5 4.00023C19.697 4.19721 19.8532 4.43106 19.9598 4.68843C20.0665 4.9458 20.1213 5.22165 20.1213 5.50023C20.1213 5.7788 20.0665 6.05465 19.9598 6.31202C19.8532 6.56939 19.697 6.80324 19.5 7.00023L7 19.5002L3 20.5002L4 16.5002L16.5 4.00023Z"
+                                        stroke="#005BB9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="btn rmv_btn">
+                                Remove
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                    viewBox="0 0 24 25" fill="none">
+                                    <path
+                                        d="M3 6.5H5M5 6.5H21M5 6.5V20.5C5 21.0304 5.21071 21.5391 5.58579 21.9142C5.96086 22.2893 6.46957 22.5 7 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V6.5H5ZM8 6.5V4.5C8 3.96957 8.21071 3.46086 8.58579 3.08579C8.96086 2.71071 9.46957 2.5 10 2.5H14C14.5304 2.5 15.0391 2.71071 15.4142 3.08579C15.7893 3.46086 16 3.96957 16 4.5V6.5M10 11.5V17.5M14 11.5V17.5"
+                                        stroke="#C81414" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product_box">
+                        <h4 class="bold_head">Product Name</h4>
+                        <p class="deammm">Nulla vitae elit libero, a pharetra augue.</p>
+                        <div class="three_box">
+                            <div class="type">
+                                <h4 class="bold_head">Type</h4>
+                                <p class="deammm">Video</p>
+                            </div>
+                            <div class="qty">
+                                <h4 class="bold_head">QTY</h4>
+                                <p class="deammm">2</p>
+                            </div>
+                            <div class="billing_type">
+                                <h4 class="bold_head">Billing type</h4>
+                                <p class="deammm">One off</p>
+                            </div>
+                        </div>
+                        <div class="sub_box">
+                            <h4 class="sub_name">Total</h4>
+                            <h4 class="sub_name">£379.00</h4>
+                        </div>
+                        <div class="butonr_box">
+                            <button class="btn edit_btn">
+                                Edit
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                    viewBox="0 0 24 25" fill="none">
+                                    <path
+                                        d="M12 20.5002H21M16.5 4.00023C16.8978 3.6024 17.4374 3.37891 18 3.37891C18.2786 3.37891 18.5544 3.43378 18.8118 3.54038C19.0692 3.64699 19.303 3.80324 19.5 4.00023C19.697 4.19721 19.8532 4.43106 19.9598 4.68843C20.0665 4.9458 20.1213 5.22165 20.1213 5.50023C20.1213 5.7788 20.0665 6.05465 19.9598 6.31202C19.8532 6.56939 19.697 6.80324 19.5 7.00023L7 19.5002L3 20.5002L4 16.5002L16.5 4.00023Z"
+                                        stroke="#005BB9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="btn rmv_btn">
+                                Remove
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                    viewBox="0 0 24 25" fill="none">
+                                    <path
+                                        d="M3 6.5H5M5 6.5H21M5 6.5V20.5C5 21.0304 5.21071 21.5391 5.58579 21.9142C5.96086 22.2893 6.46957 22.5 7 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V6.5H5ZM8 6.5V4.5C8 3.96957 8.21071 3.46086 8.58579 3.08579C8.96086 2.71071 9.46957 2.5 10 2.5H14C14.5304 2.5 15.0391 2.71071 15.4142 3.08579C15.7893 3.46086 16 3.96957 16 4.5V6.5M10 11.5V17.5M14 11.5V17.5"
+                                        stroke="#C81414" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product_box">
+                        <h4 class="bold_head">Product Name</h4>
+                        <p class="deammm">Nulla vitae elit libero, a pharetra augue.</p>
+                        <div class="three_box">
+                            <div class="type">
+                                <h4 class="bold_head">Type</h4>
+                                <p class="deammm">Video</p>
+                            </div>
+                            <div class="qty">
+                                <h4 class="bold_head">QTY</h4>
+                                <p class="deammm">2</p>
+                            </div>
+                            <div class="billing_type">
+                                <h4 class="bold_head">Billing type</h4>
+                                <p class="deammm">One off</p>
+                            </div>
+                        </div>
+                        <div class="sub_box">
+                            <h4 class="sub_name">Total</h4>
+                            <h4 class="sub_name">£379.00</h4>
+                        </div>
+                        <div class="butonr_box">
+                            <button class="btn edit_btn">
+                                Edit
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                    viewBox="0 0 24 25" fill="none">
+                                    <path
+                                        d="M12 20.5002H21M16.5 4.00023C16.8978 3.6024 17.4374 3.37891 18 3.37891C18.2786 3.37891 18.5544 3.43378 18.8118 3.54038C19.0692 3.64699 19.303 3.80324 19.5 4.00023C19.697 4.19721 19.8532 4.43106 19.9598 4.68843C20.0665 4.9458 20.1213 5.22165 20.1213 5.50023C20.1213 5.7788 20.0665 6.05465 19.9598 6.31202C19.8532 6.56939 19.697 6.80324 19.5 7.00023L7 19.5002L3 20.5002L4 16.5002L16.5 4.00023Z"
+                                        stroke="#005BB9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="btn rmv_btn">
+                                Remove
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                    viewBox="0 0 24 25" fill="none">
+                                    <path
+                                        d="M3 6.5H5M5 6.5H21M5 6.5V20.5C5 21.0304 5.21071 21.5391 5.58579 21.9142C5.96086 22.2893 6.46957 22.5 7 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V6.5H5ZM8 6.5V4.5C8 3.96957 8.21071 3.46086 8.58579 3.08579C8.96086 2.71071 9.46957 2.5 10 2.5H14C14.5304 2.5 15.0391 2.71071 15.4142 3.08579C15.7893 3.46086 16 3.96957 16 4.5V6.5M10 11.5V17.5M14 11.5V17.5"
+                                        stroke="#C81414" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order_history">
+                    <div class="order_hist_2_1">
+                        <div class="sub_box">
+                            <h4 class="sub_name">SubTotal</h4>
+                            <h4 class="sub_name">£379.00</h4>
+                        </div>
+                        <hr class="line">
+                        <div class="form-group form_group">
+                            <label class="label_name" for="exampleInputPassword1 label_name">Enter Coupon Code</label>
+                            <input type="text" class="form-control feild_box1" id="exampleInputPassword1"
+                                placeholder="Enter Coupon">
+                        </div>
+                        <button class="btn aply_btn">Apply Coupon Code
+                        </button>
+                        <div class="sub_box">
+                            <h4 class="sub_name">Total</h4>
+                            <h4 class="sub_name">£379.00</h4>
+                        </div>
+                        <button class="btn pay_button">
+                            Checkout
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M1 10.5H23M3 4.5H21C22.1046 4.5 23 5.39543 23 6.5V18.5C23 19.6046 22.1046 20.5 21 20.5H3C1.89543 20.5 1 19.6046 1 18.5V6.5C1 5.39543 1.89543 4.5 3 4.5Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <img src="./img/footer_logo.svg" alt="" class="img-left">
+                    </div>
+                    <div class="fot_mob">
+                        <p class="fotmail_mob">info@thewebzter.com</p>
+                        <p class="footer_copyright_mob">Company name,123 place, City, Country, Post code</p>
+                    </div>
+                    <div class="footer_top_right">
+                        <div class="link_div">
+                            <a href="" class="footer_link">Store</a>
+                            <a href="" class="footer_link">Expert Advice</a>
+                        </div>
+                        <div class="link_div">
+                            <a href="" class="footer_link">About Us</a>
+                            <a href="" class="footer_link">Login / Register</a>
+                        </div>
+                        <div class="link_div">
+                            <a href="" class="footer_link">Contact Us</a>
+                            <a href="" class="footer_link">Terms & Conditions</a>
+                        </div>
+                        <div class="link_div">
+                            <a href="" class="footer_link">Privacy Policy</a>
+                            <a href="" class="footer_link">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_up">
+                        <p class="fotmail">info@thewebzter.com</p>
+                        <img src="./img/mastercard.png" alt="" class="img-fluid">
+                        <p class="footer_copyright_mob">© 2023 The Webzter . All rights reserved.</p>
+                    </div>
+                    <div class="footer_bottom_down">
+                        <p class="footer_copyright">Company name,123 place, City, Country, Post code</p>
+                        <p class="footer_copyright">© 2023 The Webzter . All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/owl.carousel.js"></script>
+    <!-- <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_menu").click(function () {
+                $(".header_mobo_main_slide").fadeIn("slow");
+                $(".hamburger_menu").fadeOut("slow");
+                $(".hamburger_menu_close").fadeIn("slow");
+            });
+            $(".hamburger_menu_close").click(function () {
+                $(".header_mobo_main_slide").fadeOut("slow");
+                $(".hamburger_menu").fadeIn("slow");
+                $(".hamburger_menu_close").fadeOut("slow");
+            });
+            $(".hamburger_cart").click(function () {
+                $(".header_cart_mobo_main_slide").fadeIn("slow");
+                $(".hamburger_menu").fadeOut("slow");
+                $(".cart_menu_close").fadeIn("slow");
+            });
+            $(".cart_menu_close").click(function () {
+                $(".header_cart_mobo_main_slide").fadeOut("slow");
+                $(".cart_menu_close").fadeOut("slow");
+                $(".hamburger_menu").fadeIn("slow");
+            });
+        });
+
+
+
+        function currency_drop(drop_id, logo_id) {
+            var a = document.getElementById(drop_id);
+            var b = document.getElementById(logo_id);
+            if (a.classList.contains('d-none')) {
+                a.classList.remove('d-none');
+                b.style.rotate = '180deg';
+            } else {
+                a.classList.add('d-none')
+                b.style.rotate = '0deg';
+            }
+        }
+
+        function desk_cart() {
+            var a = document.getElementById('cart_drop');
+            var b = document.getElementById('cart_btn');
+            if (a.classList.contains('d-none')) {
+                a.classList.remove('d-none');
+                b.classList.add('active');
+            } else {
+                a.classList.add('d-none');
+                b.classList.remove('active');
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
