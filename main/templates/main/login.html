@@ -1,0 +1,93 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="login_register">
+    <div class="container">
+        <div class="lrs1_frame">
+            <div class="login_frame">
+                <h1 class="lrs1_title">Login</h1>
+                <div class="input_frame">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your User Name">
+                </div>
+                <div class="input_frame">
+                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Password Here">
+                </div>
+                <div class="login_check_frame">
+                    <div class="c-checkbox">
+                        <div class="c-div">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text">
+                            <p class="login_strong">Remember Me</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn_global_black w-100 martal">
+                    Login
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="btn btn_global_trans mx-auto">
+                    Forgot Password?
+                </button>
+            </div>
+            <div class="register_frame">
+                <h1 class="lrs1_title">Register</h1>
+                <div class="input_frame">
+                    <label for="exampleInputEmail1" class="form-label">First Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your First Name">
+                </div>
+                <div class="input_frame">
+                    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Last Name">
+                </div>
+                <div class="input_frame">
+                    <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Address">
+                </div>
+                <div class="input_frame">
+                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Password">
+                </div>
+                <div class="input_frame">
+                    <label for="exampleInputEmail1" class="form-label">Confirm New Password</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Confirm Password">
+                </div>
+                <div class="register_check_frame">
+                    <div class="c-checkbox">
+                        <div class="c-div">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text">
+                            <p class="login_strong">By ticking this box, you agree to <a href="">Terms and Conditions</a> and <a href="">Privacy Policy.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <img src="{% static 'img/reCaptcha.png' %}" alt="" class="img-fluid">
+                <button class="btn btn_global_black w-100 martal_up">
+                    Register
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}
