@@ -1,0 +1,119 @@
+{% load static %}
+<header class="fixed-top">
+    <div class="header_top">
+        <div class="container desktop_header">
+            <div class="header_main_container">
+                <div class="header_left">
+                    <a href="#">
+                        <img src="{% static 'img/header_logo.svg' %}" alt="" class="img-fluid">
+                    </a>
+                </div>
+                
+                <div class="header_right">
+                    <div class="header_right_l">
+                        <button class="btn btn_header">
+                            Store
+                        </button>
+                        <button class="btn btn_header">
+                            Expert Advise
+                        </button>
+                        <button class="btn btn_header">
+                            About us
+                        </button>
+                        <button class="btn btn_header">
+                            Contact us
+                        </button>
+                    </div>
+                    <div class="header_right_r">
+                        <div class="header_div"></div>
+                        <div class="currency_drop_div">
+                            <button class="btn btn_header" onclick="currency_drop('currency_drop', 'currency_drop_logo')">
+                                USD
+                                <img src="{% static 'img/currency_drop_ico.svg' %}" alt="" class="img-fluid" id="currency_drop_logo">
+                            </button>
+                            <div class="currency_drop d-none" id="currency_drop">
+                                <button class="btn btn_header">EUR</button>
+                                <button class="btn btn_header active">GBP</button>
+                                <button class="btn btn_header">GBP</button>
+                                <button class="btn btn_header">GBP</button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header">
+                            Cart (10)
+                        </button>
+                        <button class="btn header_button">
+                            Login/Register
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5M16 7.5C16 9.70914 14.2091 11.5 12 11.5C9.79086 11.5 8 9.70914 8 7.5C8 5.29086 9.79086 3.5 12 3.5C14.2091 3.5 16 5.29086 16 7.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mobile_header">
+            <div class="header_mobo_main">
+                <div class="header_mobo_left">
+                    <!-- <button class="btn p-0"> -->
+                        <img src="{% static 'img/header_mobo.svg' %}" alt="" class="img-fluid">
+                    <!-- </button> -->
+                </div>
+                <div class="header_mobo_right">
+                    <div class="hamburger_menu">
+                        <img src="{% static 'img/hamburger_logo.svg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="hamburger_menu_close" style="display: none;">
+                        <img src="{% static 'img/hamburger_close.svg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="cart_menu_close" style="display: none;">
+                        <img src="{% static 'img/hamburger_close.svg' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_mobo_main_slide" style="display: none;">
+        <div class="header_main_mobo">
+            <button class="btn btn_header">
+                Shop
+            </button>
+            <div class="mob_line_header"></div>
+            <button class="btn btn_header">
+                Expert Advise
+            </button>
+            <div class="mob_line_header"></div>
+            <button class="btn btn_header">
+                About us
+            </button>
+            <div class="mob_line_header"></div>
+            <button class="btn btn_header">
+                Contact us
+            </button>
+            <div class="mob_line_header"></div>
+            <div class="currency_drop_div">
+                <button class="btn btn_header mx-auto" onclick="currency_drop('currency_drop2', 'currency_drop_logo2')">
+                    USD
+                    <img src="{% static 'img/currency_drop_ico.svg' %}" alt="" class="img-fluid" id="currency_drop_logo2">
+                </button>
+                <div class="currency_drop d-none" id="currency_drop2">
+                    <button class="btn btn_header">EUR</button>
+                    <button class="btn btn_header">GBP</button>
+                </div>
+            </div>
+            <div class="mob_line_header"></div>
+            <button class="btn btn_header">
+                Cart (10)
+            </button>
+            <div class="mob_line_header"></div>
+            <button class="btn header_button">
+                Login/Register
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5M16 7.5C16 9.70914 14.2091 11.5 12 11.5C9.79086 11.5 8 9.70914 8 7.5C8 5.29086 9.79086 3.5 12 3.5C14.2091 3.5 16 5.29086 16 7.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+    
+    
+</header>
