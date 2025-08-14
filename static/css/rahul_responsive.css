@@ -1,0 +1,421 @@
+@media only screen and (max-width: 600px) {
+
+    /* Payment Success Start */
+    .success2_container {
+        display: none;
+    }
+
+    .mob_tablebar {
+        display: block;
+    }
+
+    .mob_dash_drop.active .mob_drop_down {
+        display: block;
+    }
+    .mob_dash_drop .mob_drop_down {
+        display: none;
+    }
+    .mob_dash_drop.active .mob_drop_up {
+        display: flex;
+    }
+    .mob_dash_drop .mob_drop_up {
+        display: none;
+    }
+    .btn_dasher {
+        display: flex;
+        padding: 29px 36px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        color: var(--Neutral-800, #3C3C3C);
+        font-family: "Futura PT";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29.5px; /* 122.917% */
+        width: 100%;
+    }
+    .mob_drop_up {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: stretch;
+    }
+    .mob_dash_drop {
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+        margin-top: 6px;
+        height: 0px;
+        transition: 0.5s ease-in-out all;
+    }
+    .mob_dash_drop.active {
+        height: 429px;
+    }
+    .success_s1 {
+        margin-top: 87px;
+        padding: 40px 0px;
+        background-image: url(../img/success_mobbg.png);
+    }
+
+    .success1_container {
+        gap: 0px;
+    }
+
+    .success_title {
+        color: var(--Primary, #D29F53);
+        text-align: center;
+        font-family: Merriweather;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        text-transform: capitalize;
+    }
+
+    .success_subtitle {
+        color: var(--Neutral-White, #FFF);
+        text-align: center;
+        font-family: "Futura PT";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .success_mobtable tbody tr td {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        gap: 24px;
+        border-bottom: 1px solid var(--Outline, rgba(190, 143, 74, 0.20));
+    }
+
+    .success_mobtable tbody tr td:first-child {
+        border-top: 1px solid var(--Outline, rgba(190, 143, 74, 0.20));
+    }
+
+    .success_mobtable tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .mob_sordertitle {
+        color: var(--Neutral-Near-Black, #111);
+        font-family: "Futura PT";
+        font-size: 18px;
+        font-style: normal;
+        margin: 0px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .mob_sordersubtitle {
+        color: var(--Neutral-800, #3C3C3C);
+        font-family: "Futura PT";
+        font-size: 18px;
+        font-style: normal;
+        margin: 0px;
+        font-weight: 400;
+        line-height: 27px;
+        opacity: 0.7;
+    }
+
+    .order_mobinfo {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        align-self: stretch;
+    }
+
+    .info_order {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .success_mobtable tbody {
+        --bs-table-striped-bg: #FBFBFB;
+        --bs-table-bg: #FFFFFF;
+        border: 1px solid var(--neutral-500, #D0D0D0);
+    }
+
+    .smob_totalbar {
+        display: flex;
+        gap: 24px;
+    }
+
+    /* Payment Success End */
+
+
+    /* Payment Failed Start */
+    .failed_title {
+        color: var(--Functional-Error-Red, #C81414);
+        text-align: center;
+        font-family: Merriweather;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        text-transform: capitalize;
+    }
+
+    .failed_s1 {
+        margin-top: 87px;
+        padding: 40px 0px;
+        background-image: url(../img/failed_mobbg.png);
+    }
+
+    .success_mobtable thead tr th {
+        padding: 24px;
+    }
+
+    /* Payment Failed End */
+
+    /* Dashboard Start */
+
+    .dashboard_left {
+        display: none;
+    }
+
+    .dashboard_s1 {
+        background-image: url(../img/dashboard_mobbg.png);
+        margin-top: 87px;
+        padding: 40px;
+    }
+
+    .not_test {
+        display: none;
+    }
+
+    .dashboards1_container {
+        justify-content: center;
+    }
+
+    .dashboard_title {
+        color: var(--Primary, #D29F53);
+        text-align: center;
+        font-family: Merriweather;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        text-transform: capitalize;
+    }
+
+    .dashboards2_container {
+        padding: 24px;
+    }
+
+    .dashboard_right {
+        width: auto;
+    }
+
+    .dashboard_main {
+        align-items: center;
+        margin-bottom: 111px;
+        padding: 24px 24px 0px 24px;
+    }
+
+    .dashboard_maintitle {
+        color: var(--Neutral-Near-Black, #111);
+        text-align: center;
+        font-family: Merriweather;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+    }
+
+    .dashboard_mainsubtitle {
+        color: var(--Neutral-800, #3C3C3C);
+        text-align: center;
+        font-family: "Futura PT";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .dashboard_mobbtn {
+        display: flex;
+        height: 88px;
+        padding: 20px 36px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--Outline, rgba(190, 143, 74, 0.20));
+        color: var(--Neutral-800, #3C3C3C);
+        font-family: "Futura PT";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29.5px;
+        border-left: 4px solid #D29F53;
+        border-radius: 0px;
+    }
+
+    .dashboard_mobbtn:hover {
+        display: flex;
+        height: 88px;
+        padding: 20px 36px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--Outline, rgba(190, 143, 74, 0.20));
+        color: var(--Neutral-800, #3C3C3C);
+        font-family: "Futura PT";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29.5px;
+        border-left: 4px solid #D29F53;
+        border-radius: 0px;
+    }
+
+    .dashboards2_container {
+        background-color: #FFFFFF;
+        display: block;
+        padding: 0px 0px 24px 0px;
+    }
+
+    /* Dashboard End */
+
+
+
+    /* Order Start */
+    .order_main {
+        display: none;
+    }
+
+    .order_mainmob {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order_cardmain {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        border-bottom: 1px solid var(--Outline, rgba(190, 143, 74, 0.20));
+    }
+
+    .orderno_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+
+    .orderno_text {
+        color: var(--Functional-Info-Blue, #005BB9);
+        text-align: right;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+
+    .mob_dashbutton {
+        padding: 0px 24px;
+    }
+
+    /* Order End */
+
+    /* Address Start */
+    .dashboard_addressright {
+        width: auto;
+    }
+
+    .mob_dashbutton {
+        display: block;
+    }
+
+    .address_cardbar {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .address_main {
+        padding: 24px 24px 0px 24px;
+    }
+
+    .address_ctitlebar {
+        width: auto;
+    }
+
+    .address_cinfobar {
+        width: auto;
+    }
+
+    .address_card {
+        align-items: normal;
+        padding: 24px;
+    }
+
+    .address_title {
+        color: var(--Neutral-800, #3C3C3C);
+        text-align: center;
+        font-family: "Futura PT";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    /* Address End */
+
+
+    /* Account Start */
+    .first_last {
+        flex-direction: column;
+    }
+
+    .account_main {
+        padding: 24px 24px 0px 24px;
+        border: none;
+    }
+
+    .account_button {
+        width: 100%;
+    }
+
+    /* Account End */
+
+    /* Reset Start */
+    .reset_section {
+        background: none;
+    }
+
+    .reset_container {
+        padding: 87px 0px 0px 0px;
+    }
+
+    .resetbar {
+        padding: 40px 24px;
+        align-items: center;
+    }
+
+    .reset_title {
+        text-align: center;
+    }
+
+    /* Reset End */
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1348px) {}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {}
